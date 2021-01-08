@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE newspaper SYSTEM  "newspaperdtd.dtd">
+<newspaper name="The Hindu">
+	<article type="politics">
+            <title>GO BACK MODI</title>
+            <author>  RJB </author>
+            <date> 1/11/2020 </date>
+            <summary>  Central Government is asking everyone to live with virus </summary>
+
+	</article>
+
+	<article type="sports">
+			<title>WORLD CUP</title>
+            <author>RJ</author>
+            <date> 1/11/2020</date>
+            <summary>Next T20 host in INDIA</summary>
+
+	</article>
+
+
+</newspaper>

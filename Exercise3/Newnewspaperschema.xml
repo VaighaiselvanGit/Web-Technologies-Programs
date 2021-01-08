@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:globalnews name="" xmlns:tns="http://www.example.org/newspaperSchema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.example.org/newspaperSchema newspaperSchema.xsd ">
+  <tns:article type="politics">
+    <tns:title>GO BACK MODI</tns:title>
+    <tns:author>RJB</tns:author>
+    <tns:date>1/11/2020</tns:date>
+    <tns:summary> Central Government is asking everyone to live with virus
+ </tns:summary>
+  </tns:article>
+  
+  <tns:article type="sports">
+    <tns:title>WORLD CUP</tns:title>
+    <tns:author>RJ</tns:author>
+    <tns:date>1/11/2020</tns:date>
+    <tns:summary>Next T20 host in INDIA</tns:summary>
+  </tns:article>
+</tns:globalnews>

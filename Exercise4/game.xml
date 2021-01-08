@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="gamexsl.xsl" version="1.0"?> 
+<sports>
+   <game id = "500">
+      <name>Cricket</name>
+      <paragraph>
+         Cricket is like religion in INDIA
+      </paragraph>
+      <playingcountry>200</playingcountry>
+   </game>
+
+   <game id = "501">
+      <name>Baseball</name>
+      <paragraph>
+         Popular in America.
+      </paragraph>
+      <playingcountry>183</playingcountry>
+   </game>
+
+   <game id = "502">
+      <name>Soccer (Football)</name>
+      <paragraph>
+         Popular sport in the world.
+      </paragraph>
+      <playingcountry>264 </playingcountry>
+   </game>
+</sports>

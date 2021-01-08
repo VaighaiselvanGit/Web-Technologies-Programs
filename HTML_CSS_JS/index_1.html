@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Submission Form</title>
+    <link rel="stylesheet" type="text/css" href="styles_1.css"> 
+</head>
+<body>
+<script type="text/javascript">
+
+   alert("Before submit your form click on validate after filled those details")
+
+</script>
+ <h3 style="text-align: center;">Online Submission</h3>
+
+<!-- <div id="basic_norms" style="padding: 7px 14px;margin: 7px 16px"> -->
+	<form name="myform" action="index_3.html" method="">
+		1. <strong>Name :</strong><input type="text" name="name" placeholder="Enter your name">
+		<br>
+		<br>
+		2. <strong>father's name / Mother's name :</strong><input type="text" name="Guradian" placeholder="Guradian's name">
+		<br>
+		<br>
+        3. <strong>Occupation :</strong><input type="text" name="Occupation" placeholder="Enter your Occupation">
+	    <br><br>
+	    4. <strong>Marks in your 10th std :</strong><input type="number" name="ten" placeholder="total_in_10th">
+        <br><br>
+        5. <strong>Marks in 12th std :</strong><input type="number" name="twelwe" placeholder="total_in_12th">
+        <br><br>
+        <!-- 6. <strong>Name</strong><input type="text" name="name" placeholder="Enter your name"> -->
+	    <ul>
+	    	<li><strong>Physics </strong><input type="number" name="phy" placeholder="physics"></li>
+	        <li><strong>Chemistry </strong><input type="number" name="che" placeholder="Chemistry"></li>
+	        <li><strong>Maths </strong><input type="number" name="mat" placeholder="Maths"></li>
+	    </ul>
+<br><br>
+	    7.<strong>Preferences </strong>
+	    <select name="pref" id="prefe">
+	    	<option value="CSE or EEE">CSE or EEE</option>
+	    	<option value="MECH or FT">MECH or FT</option>
+	    	<option value="ECE or CIVIL">
+	    		ECE or CIVIL
+	    	</option>
+	    </select>
+
+	    <br><br>
+	    8. <strong>Email </strong> <input type="email" name="email" placeholder="Enter your mail">
+	   <br><br> 
+	   9.<strong>Mobile Number </strong> <input type="text" name="mobile" placeholder="Enter your mobile number">
+	   <br><br>
+	   <input style="text-align: center;"type="submit" value="submit-form">
+	   
+	
+	</form>
+	<br>
+	<br>
+	<button id="button" style="text-align: center;">validate</button>
+
+<!-- </div> -->
+
+
+<!--form validation-->
+<script type="text/javascript">
+
+	document.getElementById("button").addEventListener('click',formvalidation);
+
+function formvalidation(){
+	var name = document.myform.name.value;
+	var guardian = document.myform.Guradian.value;
+	var Occupation = document.myform.Occupation.value;
+	var Ten = document.myform.ten.value;
+	var twelwe = document.myform.twelwe.value;
+	var phy = document.myform.phy.value;
+	var che = document.myform.che.value;
+	var mat = document.myform.mat.value;
+	var twelwe = document.myform.twelwe.value;
+	var email = document.myform.email.value;
+	var phonenumber = document.myform.mobile.value;
+	if(name==null || name==""){
+		alert("please enter your name");
+	}
+	if(guardian==null || guardian==""){
+		alert("please enter your Guradian name");
+	}
+	if(Occupation==null || Occupation==""){
+		alert("please enter your Occupation");
+	}
+	if(Ten<0 || Ten<500){
+		alert("please enter your total for 10 th std");
+	}
+
+	if(twelwe<0 || twelwe>1200){
+		alert("please enter your total for 12 th std");
+	}
+	if(phy<0 || phy>200){
+		alert("please enter your 10th physics mark");
+	if(che<0 || che>200){
+		alert("please enter your 10th physics mark")
+	}
+	if(mat<0 || mat>200){
+		alert("please enter your 10th physics mark")
+	}
+	if(email=='' || email==null){
+		alert("please enter your EMAIL")
+	}
+	if(phonenumber==''){
+		alert("Please enter your mobile");
+	}
+	var cuttoff=(phy+mat+che)/3;
+	document.writeln("<h1>"+"Your cutt off is"+cuttoff+"</h1>")
+}
+</script>
+
+
+</body>
+</html>
